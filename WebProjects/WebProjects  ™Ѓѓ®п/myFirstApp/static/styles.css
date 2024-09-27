@@ -1,0 +1,35 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.main-content{
+	display: inline-block;
+}
+.main-image-block {
+	display: block;
+	width: 200;
+	text-align: center;
+	border: solid;
+	border-width: 0.5px;
+	padding: 8px;
+	float: right;
+	margin: 16px;
+	background: lightgrey;
+}
+.main-image-block img{
+    object-fit: contain;
+
+
+}
+
+.content-menu {
+	border: solid;
+}
+.top-menu{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.top-menu>div{
+	background: red;
+}

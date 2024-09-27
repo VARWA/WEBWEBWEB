@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Российские студенческие отряды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="logo">
+            <!-- Логотип (если есть) -->
+            <img src="logo.png" alt="Логотип РСО">
+        </div>
+        <h1>Российские студенческие отряды</h1>
+        <nav>
+            <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная страница -->
+    <section id="main">
+        <h2>О деятельности РСО</h2>
+        <p>Российские студенческие отряды — это движение, объединяющее студентов для работы и личностного роста.</p>
+    </section>
+
+    <!-- Секция о ВССО 64 -->
+    <section id="news">
+        <h2>ВССО 64</h2>
+        <p>64 Всероссийский слёт студенческих отрядов — важное мероприятие для участников движения.</p>
+        <button onclick="showMore()">Подробнее</button>
+        <div id="full-news" style="display:none;">
+            <p>Полная информация о 64 Всероссийском слёте студенческих отрядов...</p>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about">
+        <h2>О нас</h2>
+        <p>РСО ставит своей целью развитие студенческих отрядов и подготовку кадров.</p>
+        <img src="about-image.jpg" alt="О РСО">
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Адрес: Москва, ул. Примерная, д. 1</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: info@rso.ru</p>
+
+        <!-- Форма обратной связи -->
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Имя" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="subject" name="subject" placeholder="Тема" required>
+            <textarea id="message" name="message" placeholder="Сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Кнопка вверх -->
+    <button id="back-to-top">Вверх</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
